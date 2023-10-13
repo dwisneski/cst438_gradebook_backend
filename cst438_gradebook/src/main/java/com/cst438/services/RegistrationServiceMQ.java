@@ -33,7 +33,11 @@ public class RegistrationServiceMQ implements RegistrationService {
 	public RegistrationServiceMQ() {
 		System.out.println("MQ registration service ");
 	}
-
+	
+	@Bean
+	Queue createQueue() {
+		return new Queue("gradebook-queue");
+	}
 
 	Queue registrationQueue = new Queue("registration-queue", true);
 
