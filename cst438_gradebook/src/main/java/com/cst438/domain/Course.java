@@ -3,10 +3,11 @@ package com.cst438.domain;
 import java.util.List;
 import java.util.ArrayList;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OrderBy;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OrderBy;
 
 @Entity
 public class Course {
@@ -15,6 +16,7 @@ public class Course {
 	private int course_id;
 	private String title;
 	private String instructor;
+	@Column(name="year1")
 	private int year;
 	private String semester;
 	

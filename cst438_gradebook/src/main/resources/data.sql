@@ -1,5 +1,5 @@
 
-INSERT INTO course (year, semester, course_id, title, instructor)  VALUES 
+INSERT INTO course (year1, semester, course_id, title, instructor)  VALUES 
 (2020,'Fall',30157,'BUS 203 - Financial Accounting','cchou@csumb.edu'),
 (2020,'Fall',30163,'BUS 306 - Fundamentals of Marketing','anariswari@csumb.edu'),
 (2020,'Fall',30291,'BUS 304 - Business Communication, Pro-seminar & Critical Thinking','kposteher@csumb.edu'),
@@ -14,11 +14,11 @@ insert into assignment (id, due_date, name, course_id) values
 (2, '2021-09-02', 'requirements', 31045)
 ;
 
-insert into enrollment (id, student_email, student_name, course_id)  values
-(1, 'test@csumb.edu', 'test', 31045),
-(2, 'dwisneski@csumb.edu', 'david', 31045),
-(3, 'trebold@csumb.edu', 'tom', 31045),
-(4, 'test4@csumb.edu', 'test4', 31045)
+insert into enrollment (student_email, student_name, course_id)  values
+('test@csumb.edu', 'test', 31045),
+('dwisneski@csumb.edu', 'david', 31045),
+('trebold@csumb.edu', 'tom', 31045),
+('test4@csumb.edu', 'test4', 31045)
 ; 
 
 insert into assignment_grade (score, assignment_id, enrollment_id) values 
